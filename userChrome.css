@@ -26,8 +26,8 @@ padding: 0px !important;
 #context_openANewTab                             /* 新しいタブ */
  { -moz-box-ordinal-group: 0 !important; }
 
-#context_undoCloseTab                            /* 閉じたタブを開きなおす */
- { -moz-box-ordinal-group: 1 !important; }       /* -を新しいタブの下に移動 */
+#context_undoCloseTab                            /* 閉じたタブを開きなおす ※ */
+ { -moz-box-ordinal-group: 1 !important; }       /* ※を新しいタブの下に移動 */
 
 
 /* 不要な項目削除 */
