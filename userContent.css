@@ -6,7 +6,7 @@
 body { font-family: "Noto Sans JP"; }
 }
 
-/* ウェブサイトからメイリオ,游ゴシック,Yu Gothic UIを消し去る */
+/* ウェブサイトからメイリオ,Meiryo UI,游ゴシック,Yu Gothic UIを消し去る */
 
 @font-face { 
   font-family: 'Meiryo';
