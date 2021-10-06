@@ -58,3 +58,17 @@ div[aria-label="タイムライン: トレンド"]    /* いまどうしてる�
 { display:none !important; }
 
 }
+
+
+/*
+既定のフォントをNoto Sans JPにしてると
+GitHubで書いた日本語が等幅にならない？ので修正
+*/
+
+@-moz-document domain("github.com") {
+
+@font-face {
+font-family: 'Consolas' ;
+src: local('BIZ UDGothic'); }
+ }
+
