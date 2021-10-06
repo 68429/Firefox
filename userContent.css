@@ -1,10 +1,11 @@
-/* FirefoxのUIフォントをNoto Sans JPに変えたいテスト */
+/* FirefoxのUIフォントをNoto Sans JPに変えたいテスト
 
-/* 設定画面 */
+設定画面
 @-moz-document url("about:preferences")
 {
 body { font-family: "Noto Sans JP"; }
 }
+*/
 
 /* ウェブサイトからメイリオ,Meiryo UI,游ゴシック,Yu Gothic UIを消し去る */
 
@@ -39,7 +40,7 @@ body { font-family: "Noto Sans JP"; }
 }
 
 @font-face { 
-  font-family: 'Yu Gothic UI';
+  font-family: 'Yu Gothic UI';              /* ここ変えたらFirefoxのUIフォントも変わるよ */
   src: local('Noto Sans JP');
 }
 
