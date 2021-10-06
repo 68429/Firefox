@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* アドレスバーをクリックした時の枠色 */
+:root {
+--focus-outline-color: #000 !important;
+} 
+
+/* タブ右クリックで出るコンテキストメニュー */
+
+#tabContextMenu > *                              /* 全ての項目順を再定義 */
+ { -moz-box-ordinal-group: 5 !important; }
+
+#context_openANewTab                             /* 新しいタブ */
+ { -moz-box-ordinal-group: 0 !important; }
+
+#context_undoCloseTab                            /* 閉じたタブを開きなおす */
+ { -moz-box-ordinal-group: 1 !important; }       /* -を新しいタブの下に移動 */
+
+
+/* 不要な項目削除 */
+#context_bookmarkTab,                            /* タブをブックマーク */
+#context_moveTabOptions,                         /* タブを移動 */
+#tabContextMenu > .share-tab-url-item,           /* 共有 */
+#context_selectAllTabs,                          /* すべてのタブを選択 */
+#context_selectAllTabs + menuseparator           /* 区切り線 */
+ { display: none !important; }
+
+/* タブ横の＋ボタンエリア右クリックで出るコンテキストメニューの項目並び替え */
+
+#toolbar-context-openANewTab                    /* 新しいタブ */
+{ -moz-box-ordinal-group: 0 !important; }
+#toolbar-context-reloadSelectedTab,             /* 選択したタブを再読み込み */
+#toolbar-context-reloadSelectedTabs,            /* 選択したタブを再読み込み */
+#toolbar-context-bookmarkSelectedTab,           /* 選択したタブをブックマーク */
+#toolbar-context-bookmarkSelectedTabs,          /* 選択したタブをブックマーク */
+#toolbar-context-selectAllTabs                 /* すべてのタブを選択 */
+{ -moz-box-ordinal-group: 1 !important; }
+#toolbar-context-undoCloseTab                  /* 閉じたタブを開きなおす */
+{ -moz-box-ordinal-group: 0 !important; }
+#toolbar-context-undoCloseTab + menuseparator,                                                                  /* 区切り線 */
+#toolbar-context-autohide-downloads-button[hidden] ~ #toolbar-context-undoCloseTab[hidden] + menuseparator,     /* 区切り線 */
+#toggle_toolbar-menubar,                                                                                        /* メニューバー */
+#toolbar-context-menu > #toggle_PersonalToolbar,                                                                /* ブックマークツールバー */
+#viewToolbarsMenuSeparator,                                                                                     /* 区切り線 */
+#toolbar-context-menu > .viewCustomizeToolbar                                                                   /* ツールバーをカスタマイズ */
+{ -moz-box-ordinal-group: 1 !important; }
+
+/* タブバー背景色 */
+.tabbrowser-tab {
+  background-color: black !important;
+}
+
+/* 非アクティブタブ背景色 */
+.tab-background:not([selected=true]) {
+background-color: black !important;
+}
+
+/* 戻る進むリロードの余白を消す */
+
+#nav-bar toolbarbutton {
+margin: 0px !important;
+padding: 0px !important;
+}
