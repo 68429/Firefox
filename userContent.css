@@ -48,13 +48,13 @@ body { font-family: "Noto Sans JP"; }
 
 @-moz-document domain("twitter.com") {
   
-/* Twitterを使ってみよう */
-section[aria-label="アカウント作成"]{display:none !important; }
+section[aria-label="アカウント作成"]       /* Twitterを使ってみよう */
+{ display:none !important; }
   
-/* いまどうしてる？ */
-div[aria-label="タイムライン: トレンド"]{display:none !important;}
+div[aria-label="タイムライン: トレンド"]   /* いまどうしてる？ */
+{ display:none !important; }
   
-/* おすすめツイート */
-.r-x572qd{display:none !important;}
+.r-x572qd                                  /* おすすめツイート */
+{ display:none !important; }
 
 }
