@@ -8,12 +8,13 @@ padding: 0px !important;
 }
 
 /* アドレスバーをクリックした時の枠色 */
+
 :root {
 --focus-outline-color: #000 !important;
 } 
 
 /*
-以下途中につき
+以下、途中につき
 不具合あるかも
 */
 
@@ -39,15 +40,15 @@ padding: 0px !important;
 
 /* タブ横の＋ボタンエリア右クリックで出るコンテキストメニューの項目並び替え */
 
-#toolbar-context-openANewTab                    /* 新しいタブ */
+#toolbar-context-openANewTab                                                                                    /* 新しいタブ */
 { -moz-box-ordinal-group: 0 !important; }
-#toolbar-context-reloadSelectedTab,             /* 選択したタブを再読み込み */
-#toolbar-context-reloadSelectedTabs,            /* 選択したタブを再読み込み */
-#toolbar-context-bookmarkSelectedTab,           /* 選択したタブをブックマーク */
-#toolbar-context-bookmarkSelectedTabs,          /* 選択したタブをブックマーク */
-#toolbar-context-selectAllTabs                 /* すべてのタブを選択 */
+#toolbar-context-reloadSelectedTab,                                                                             /* 選択したタブを再読み込み */
+#toolbar-context-reloadSelectedTabs,                                                                            /* 選択したタブを再読み込み */
+#toolbar-context-bookmarkSelectedTab,                                                                           /* 選択したタブをブックマーク */
+#toolbar-context-bookmarkSelectedTabs,                                                                          /* 選択したタブをブックマーク */
+#toolbar-context-selectAllTabs                                                                                  /* すべてのタブを選択 */
 { -moz-box-ordinal-group: 1 !important; }
-#toolbar-context-undoCloseTab                  /* 閉じたタブを開きなおす */
+#toolbar-context-undoCloseTab                                                                                   /* 閉じたタブを開きなおす */
 { -moz-box-ordinal-group: 0 !important; }
 #toolbar-context-undoCloseTab + menuseparator,                                                                  /* 区切り線 */
 #toolbar-context-autohide-downloads-button[hidden] ~ #toolbar-context-undoCloseTab[hidden] + menuseparator,     /* 区切り線 */
