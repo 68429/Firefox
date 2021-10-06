@@ -2,12 +2,10 @@
 
 @-moz-document url("about:preferences")
 {
-body {
-font-family: "Noto Sans JP";
-}
+body { font-family: "Noto Sans JP"; }
 }
 
-/* メイリオ,游ゴシック,Yu Gothic UIを消し去る */
+/* ウェブサイトからメイリオ,游ゴシック,Yu Gothic UIを消し去る */
 
 @font-face { 
   font-family: 'Meiryo';
@@ -42,4 +40,20 @@ font-family: "Noto Sans JP";
 @font-face { 
   font-family: 'Yu Gothic UI';
   src: local('Noto Sans JP');
+}
+
+
+/* Twitter */
+
+@-moz-document domain("twitter.com") {
+  
+/* Twitter */
+section[aria-label="アカウント作成"]{display:none !important; }
+  
+/* Twitter */
+div[aria-label="タイムライン: トレンド"]{display:none !important;}
+  
+/* Twitter */
+.r-x572qd{display:none !important;}
+
 }
