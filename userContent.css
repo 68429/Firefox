@@ -40,10 +40,9 @@ body { font-family: "Noto Sans JP"; }
 }
 
 @font-face { 
-  font-family: 'Yu Gothic UI';              /* ここ変えたらFirefoxのUIフォントも変わるよ */
-  src: local('Noto Sans JP');
+  font-family: 'Yu Gothic UI';
+  src: local('Noto Sans JP');               /* ここ変えたらFirefoxのUIフォントも変わるよ */
 }
-
 
 /* Twitterの右カラム消し */
 
