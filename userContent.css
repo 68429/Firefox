@@ -1,5 +1,6 @@
 /* FirefoxのUIフォントをNoto Sans JPに変えたいテスト */
 
+/* 設定画面 */
 @-moz-document url("about:preferences")
 {
 body { font-family: "Noto Sans JP"; }
@@ -43,17 +44,17 @@ body { font-family: "Noto Sans JP"; }
 }
 
 
-/* Twitter */
+/* Twitterの右カラム消し */
 
 @-moz-document domain("twitter.com") {
   
-/* Twitter */
+/* Twitterを使ってみよう */
 section[aria-label="アカウント作成"]{display:none !important; }
   
-/* Twitter */
+/* いまどうしてる？ */
 div[aria-label="タイムライン: トレンド"]{display:none !important;}
   
-/* Twitter */
+/* おすすめツイート */
 .r-x572qd{display:none !important;}
 
 }
