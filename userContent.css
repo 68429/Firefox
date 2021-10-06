@@ -1,0 +1,36 @@
+/* メイリオ,游ゴシック,Yu Gothic UIを消し去る */
+
+@font-face { 
+  font-family: 'Meiryo';
+  src: local('Noto Sans JP');
+}
+
+@font-face { 
+  font-family: 'メイリオ';
+  src: local('Noto Sans JP');
+}
+
+@font-face { 
+  font-family: 'Meiryo UI';
+  src: local('Noto Sans JP');
+}
+
+@font-face { 
+  font-family: 'Yu Gothic Medium';
+  src: local('Noto Sans JP');
+}
+
+@font-face { 
+  font-family: 'Yu Gothic';
+  src: local('Noto Sans JP');
+}
+
+@font-face { 
+  font-family: '游ゴシック';
+  src: local('Noto Sans JP');
+}
+
+@font-face { 
+  font-family: 'Yu Gothic UI';
+  src: local('Noto Sans JP');
+}
