@@ -24,6 +24,12 @@ user_pref("browser.link.open_newwindow",3);
 // 同時に複数のタブを閉じるときは確認しない
 user_pref("browser.tabs.warnOnClose",false);
 
+// リンク、画像、メディアを新しいタブで開いたとき、すぐにそのタブに切り替える
+user_pref("browser.tabs.loadInBackground",false);
+
+// タスクバーにタブのプレビューを表示しない
+user_pref("browser.taskbar.previews.enable",false);
+
 // ホームページと新しいウインドウ
 user_pref("browser.startup.homepage","https://www.google.co.jp/");
 
