@@ -1,3 +1,15 @@
+/* プライベートウインドウを開くと必ず表示されるページの背景色を変更 */
+
+@-moz-document url(about:privatebrowsing) {
+html.private {
+--in-content-page-background: #0f0f0f !important;
+ }
+
+.info {
+background-color: rgba(255, 255, 255, 0.1) !important;
+ }
+ }
+
 /* ウェブサイトからメイリオ,Meiryo UI,游ゴシック,Yu Gothic UI,ＭＳ Ｐゴシックを消し去る */
 
 @font-face { 
