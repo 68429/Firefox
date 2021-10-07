@@ -26,12 +26,17 @@
 }
 
 @font-face { 
-  font-family: 'YuGothic';                  /* これを書かないと@font-faceでかすれない游ゴシックを強制指定してるサイトで効かないぽい */
+  font-family: 'YuGothic';                  /* これを書かないと@font-faceで游ゴシックがかすれない様に強制指定してるサイトで効かないぽい */
   src: local('Noto Sans JP');
 }
 
 @font-face { 
   font-family: '游ゴシック';
+  src: local('Noto Sans JP');
+}
+
+@font-face { 
+  font-family: '游ゴシック Light';          /* これを指定してくるサイトは害悪 */
   src: local('Noto Sans JP');
 }
 
