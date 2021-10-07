@@ -26,6 +26,11 @@
 }
 
 @font-face { 
+  font-family: 'YuGothic';
+  src: local('Noto Sans JP');
+}
+
+@font-face { 
   font-family: '游ゴシック';
   src: local('Noto Sans JP');
 }
