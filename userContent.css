@@ -2,8 +2,7 @@
 
 @-moz-document url("about:privatebrowsing") {
  
-/* プライベートウインドウを開くと必ず表示されるページを空白にしたいけどちらつきが発生しちゃうんだよね
-* { display: none !important; } */
+/* * { display: none !important; }           プライベートウインドウを開くと必ず表示されるページを空白にしたいけどちらつきが発生しちゃうんだよね */
  
 html.private {
 --in-content-page-background: #0f0f0f !important;
