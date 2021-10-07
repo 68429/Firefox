@@ -1,4 +1,4 @@
-// userChrome.cssを反映
+// userChrome.css/userContent.cssを反映
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets",true);
 
 // 消えたUI 密度コンパクト復活
