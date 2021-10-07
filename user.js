@@ -79,6 +79,9 @@ user_pref("browser.download.useDownloadDir",false);
 // 自動スクロールを使用しない
 user_pref("general.autoScroll",false);
 
+// スムーズスクロール機能を使用しない
+user_pref("general.smoothScroll", false);
+
 // 必要であればタッチキーボードを表示する を無効
 user_pref("ui.osk.enabled",false);
 
