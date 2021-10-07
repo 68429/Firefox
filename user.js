@@ -4,6 +4,10 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets",true);
 // 消えたUI 密度コンパクト復活
 user_pref("browser.compactmode.show",true);
 
+// 起動
+// 0: 空白ページ, 1: ホームページ, 2: 最後に開いたページ, 3: 前回のセッションを復元する
+user_pref("browser.startup.page",1);
+
 // ブラウザーを終了させるときは確認しない
 user_pref("browser.sessionstore.warnOnQuit",false);
 
@@ -12,6 +16,10 @@ user_pref("browser.shell.checkDefaultBrowser",false);
 
 // Ctrl+Tab で最近使用した順にタブを切り替えない
 user_pref("browser.ctrlTab.sortByRecentlyUsed",false);
+
+// 新しいウィンドウではなく新しいタブに開く
+// 1: 現在のタブ, 2: 新しいウィンドウ, 3: 新しいタブ
+user_pref("browser.link.open_newwindow",3);
 
 // 同時に複数のタブを閉じるときは確認しない
 user_pref("browser.tabs.warnOnClose",false);
