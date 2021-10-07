@@ -1,6 +1,10 @@
 /* プライベートウインドウを開くと必ず表示されるページの背景色を変更 */
 
 @-moz-document url("about:privatebrowsing") {
+ 
+/* プライベートウインドウを開くと必ず表示されるページを空白にしたいけどちらつきが発生しちゃうんだよね
+* { display: none !important; } */
+ 
 html.private {
 --in-content-page-background: #0f0f0f !important;
  }
