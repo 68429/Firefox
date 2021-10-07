@@ -1,3 +1,5 @@
+// Last updated: 2021.10.07
+
 // userChrome.cssとuserContent.cssを反映
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets",true);
 
