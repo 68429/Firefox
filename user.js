@@ -10,14 +10,14 @@ user_pref("browser.sessionstore.warnOnQuit",false);
 // Firefox が既定のブラウザか確認しない
 user_pref("browser.shell.checkDefaultBrowser",false);
 
+// 同時に複数のタブを閉じるときは確認しない
+user_pref("browser.tabs.warnOnClose",false);
+
 // ホームページと新しいウインドウ
 user_pref("browser.startup.homepage","https://www.google.co.jp/");
 
 // 最後のタブを閉じてもFirefoxを終了させない
 user_pref("browser.tabs.closeWindowWithLastTab",false);
-
-// 複数のタブを閉じる時に確認しない
-user_pref("browser.tabs.warnOnClose",false);
 
 // ブックマークを新しいタブで開く
 user_pref("browser.tabs.loadBookmarksInTabs",true);
