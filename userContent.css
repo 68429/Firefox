@@ -1,4 +1,4 @@
-/* ウェブサイトからメイリオ,Meiryo UI,游ゴシック,Yu Gothic UIを消し去る */
+/* ウェブサイトからメイリオ,Meiryo UI,游ゴシック,Yu Gothic UI,ＭＳ Ｐゴシックを消し去る */
 
 @font-face { 
   font-family: 'Meiryo';
@@ -33,6 +33,11 @@
 @font-face { 
   font-family: 'Yu Gothic UI';
   src: local('Noto Sans JP');               /* ここを変更するとabout:から始まるページの字体も変わる */
+}
+
+@font-face { 
+  font-family: 'ＭＳ Ｐゴシック';
+  src: local('Noto Sans JP');               /* アメブロが未だにＭＳ Ｐゴシックを指定してくるので対策 */
 }
 
 /* Twitterの右カラム消し */
