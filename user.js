@@ -4,6 +4,9 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets",true);
 // 消えたUI 密度コンパクト復活
 user_pref("browser.compactmode.show",true);
 
+// Firefox が既定のブラウザか確認しない
+user_pref("browser.shell.checkDefaultBrowser",false);
+
 // ホームページと新しいウインドウ
 user_pref("browser.startup.homepage","https://www.google.co.jp/");
 
@@ -24,9 +27,6 @@ user_pref("browser.urlbar.suggest.bookmark",false);
 
 // アドレスバークリックで出るショートカット非表示
 user_pref("browser.urlbar.suggest.topsites",false);
-
-// 既定のブラウザか確認しない
-user_pref("browser.shell.checkDefaultBrowser",false);
 
 // 右クリックで画像の情報を表示を復活
 user_pref("browser.menu.showViewImageInfo",true);
