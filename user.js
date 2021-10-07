@@ -31,6 +31,9 @@ user_pref("browser.shell.checkDefaultBrowser",false);
 // 右クリックで画像の情報を表示を復活
 user_pref("browser.menu.showViewImageInfo",true);
 
+// view-sourceで長い行を折り返す
+user_pref("view_source.wrap_long_lines",true);
+
 // ポップアップをブロックするとき、このメッセージを表示しない
 user_pref("privacy.popups.showBrowserMessage",false);
 
@@ -80,7 +83,7 @@ user_pref("browser.download.useDownloadDir",false);
 user_pref("general.autoScroll",false);
 
 // スムーズスクロール機能を使用しない
-user_pref("general.smoothScroll", false);
+user_pref("general.smoothScroll",false);
 
 // 必要であればタッチキーボードを表示する を無効
 user_pref("ui.osk.enabled",false);
