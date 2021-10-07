@@ -10,6 +10,9 @@ user_pref("browser.sessionstore.warnOnQuit",false);
 // Firefox が既定のブラウザか確認しない
 user_pref("browser.shell.checkDefaultBrowser",false);
 
+// Ctrl+Tab で最近使用した順にタブを切り替えない
+user_pref("browser.ctrlTab.sortByRecentlyUsed",false);
+
 // 同時に複数のタブを閉じるときは確認しない
 user_pref("browser.tabs.warnOnClose",false);
 
