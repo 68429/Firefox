@@ -4,6 +4,9 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets",true);
 // 消えたUI 密度コンパクト復活
 user_pref("browser.compactmode.show",true);
 
+// ブラウザーを終了させるときは確認しない
+user_pref("browser.sessionstore.warnOnQuit",false);
+
 // Firefox が既定のブラウザか確認しない
 user_pref("browser.shell.checkDefaultBrowser",false);
 
