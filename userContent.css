@@ -1,9 +1,12 @@
-/* プライベートウインドウを開くと必ず表示されるページの背景色を変更 */
+/*
+一瞬紫色が表示されるのは元のaboutPrivateBrowsing.cssを読み込みに行く狐の仕様だから仕方ない
+aboutPrivateBrowsing.cssをもっと手軽に書き換えられたら良いのにね
+omni.ja書き換えるのは面倒でリスクあるからやめとく
+*/
+
+/* プライベートウインドウを開くと最初に表示されるページの背景色を変更 */
 
 @-moz-document url("about:privatebrowsing") {
- 
-/* * { display: none !important; }
- 空白にしたいけどちらつきが発生するので微妙 */
  
 html.private {
 --in-content-page-background: #0f0f0f !important;
