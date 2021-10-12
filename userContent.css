@@ -71,12 +71,12 @@ background-color: rgba(255, 255, 255, 0.1) !important;
 
 @font-face { 
   font-family: 'ＭＳ Ｐゴシック';
-  src: local('Noto Sans JP');               /* アメブロが未だにＭＳ Ｐゴシックを指定してくるので対策 */
+  src: local('Noto Sans JP');               /* アメブロ,価格.comのクチコミ掲示板 */
 }
 
 @font-face {
   font-family: 'MS PGothic';
-  src: local('Noto Sans JP');
+  src: local('Noto Sans JP');               /* ニコニコ大百科 */
 }
 
 
