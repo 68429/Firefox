@@ -12,7 +12,7 @@ background-color: rgba(255, 255, 255, 0.1) !important;
  }
  }
 
-/* ウェブサイトからメイリオ,Meiryo UI,游ゴシック,Yu Gothic UI,ＭＳ Ｐゴシックを消し去る */
+/* 見づらいマイクロソフトのフォントから見やすいNoto Sansに変更 */
 
 @font-face { 
   font-family: 'Meiryo';
@@ -72,6 +72,16 @@ background-color: rgba(255, 255, 255, 0.1) !important;
 @font-face {
   font-family: 'MS PGothic';                /* ニコニコ大百科 */
   src: local('Noto Sans JP');
+}
+
+@font-face {
+  font-family: 'Microsoft YaHei';           /* ビリビリとか中国語サイト用 */
+  src: local('Noto Sans SC');
+}
+
+@font-face {
+  font-family: 'Malgun Gothic';             /* 韓国語サイト用 */
+  src: local('Noto Sans KR');
 }
 
 
