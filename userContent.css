@@ -80,13 +80,8 @@ background-color: rgba(255, 255, 255, 0.1) !important;
   src: local('Noto Sans SC');
 }
 
-@font-face {
-  font-family: 'Malgun Gothic';             /* 韓国語サイト用 */
-  src: local('Noto Sans KR');
-}
 
-
-/* Google 翻訳でページ全体を和訳した時にひらがなが変になったり漢字が中国フォントになるのを修正 */
+/* Google 翻訳でページ全体を和訳した時に元のフォントを継承されると日本語として読みづらいので修正 */
 
 @-moz-document domain("translate.goog") {
  
