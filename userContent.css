@@ -86,9 +86,26 @@ background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 
+/* Google 翻訳でページ全体を和訳した時にひらがなが変になったり漢字が中国フォントになるのを修正 */
+
+@-moz-document domain("translate.goog") {
+ 
+@font-face {
+  font-family: 'Microsoft YaHei';           /* Chinese Websites */
+  src: local('Noto Sans JP');
+}
+
+@font-face {
+  font-family: 'Malgun Gothic';             /* Korean Websites */
+  src: local('Noto Sans JP');
+}
+
+}
+
+
 /* Twitterの右カラム消し */
 
-@-moz-document domain("twitter.com") {
+@-moz-document domain("translate.goog") {
   
 section[aria-label="アカウント作成"]        /* Twitterを使ってみよう */
 { display:none !important; }
