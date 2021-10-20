@@ -102,7 +102,7 @@ https://fonts.google.com/noto/fonts?noto.region=Asia
 
 /* Twitterの右カラム消し */
 
-@-moz-document domain("translate.goog") {
+@-moz-document domain("twitter.com") {
   
 section[aria-label="アカウント作成"]        /* Twitterを使ってみよう */
 { display:none !important; }
