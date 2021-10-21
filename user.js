@@ -92,6 +92,12 @@ user_pref("media.autoplay.default",5);
 // 0: ブロックしない, 2: ブロックする
 user_pref("permissions.default.xr",2);
 
+// 日本語 ゴシック体
+user_pref("font.name.sans-serif.ja","Noto Sans JP");
+
+// 英語 ゴシック体
+user_pref("font.name.sans-serif.x-western","Segoe UI");
+
 // 日本語 等幅フォント
 user_pref("font.name.monospace.ja","BIZ UDゴシック");
 
