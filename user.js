@@ -104,6 +104,12 @@ user_pref("font.name.sans-serif.ja","Noto Sans JP");
 // 英語 ゴシック体
 user_pref("font.name.sans-serif.x-western","Segoe UI");
 
+// 中国語 ゴシック体
+user_pref("font.name.sans-serif.zh-CN","Noto Sans SC");
+
+// 韓国語 ゴシック体
+user_pref("font.name.sans-serif.ko","Noto Sans KR");
+
 // 日本語 等幅フォント
 user_pref("font.name.monospace.ja","BIZ UDゴシック");
 
