@@ -120,7 +120,7 @@ user_pref("font.name.monospace.x-western","BIZ UDゴシック");
 user_pref("font.minimum-size.ja",13);
 
 // 英語の最小フォントサイズ
-user_pref("font.minimum-size.x-western",13);
+user_pref("font.minimum-size.x-western",14);
 
 // 日付、時刻、数値、寸法の書式に、OS の”日本語(日本)”の設定を使う
 user_pref("intl.regional_prefs.use_os_locales",true);
