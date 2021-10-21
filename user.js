@@ -1,4 +1,4 @@
-// Last updated: 2021.10.07
+// Last updated: 2021.10.21
 
 // userChrome.cssとuserContent.cssを反映
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets",true);
@@ -91,6 +91,12 @@ user_pref("media.autoplay.default",5);
 // VR デバイスへのアクセスの要求をブロック
 // 0: ブロックしない, 2: ブロックする
 user_pref("permissions.default.xr",2);
+
+// 日本語 等幅フォント
+user_pref("font.name.monospace.ja","BIZ UDゴシック");
+
+// 英語 等幅フォント
+user_pref("font.name.monospace.x-western","BIZ UDゴシック");
 
 // 日本語の最小フォントサイズ
 user_pref("font.minimum-size.ja",13);
