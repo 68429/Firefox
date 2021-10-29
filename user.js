@@ -98,22 +98,22 @@ user_pref("font.size.variable.ja",18);
 // 英語 プロポーショナルのサイズ
 user_pref("font.size.variable.x-western",18);
 
-// 日本語 ゴシック体
+// 日本語 サンセリフ(ゴシック体)
 user_pref("font.name.sans-serif.ja","Noto Sans JP");
 
-// 英語 ゴシック体
+// 英語(ラテン文字) サンセリフ
 user_pref("font.name.sans-serif.x-western","Segoe UI");
 
-// 中国語 ゴシック体
+// 簡体字中国語 サンセリフ
 user_pref("font.name.sans-serif.zh-CN","Noto Sans SC");
 
-// 韓国語 ゴシック体
+// 韓国語 サンセリフ
 user_pref("font.name.sans-serif.ko","Noto Sans KR");
 
 // 日本語 等幅フォント
 user_pref("font.name.monospace.ja","BIZ UDゴシック");
 
-// 英語 等幅フォント
+// 英語(ラテン文字) 等幅フォント
 user_pref("font.name.monospace.x-western","BIZ UDゴシック");
 
 // 日本語の最小フォントサイズ
