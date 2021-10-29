@@ -82,6 +82,11 @@ https://fonts.google.com/noto/fonts?noto.continent=Asia
   src: local('Noto Sans SC');
 }
 
+@font-face {
+    font-family: 'ＭＳ ゴシック';           /* 等幅フォント */
+    src: local('BIZ UDゴシック');
+}
+
 
 /* Google 翻訳でページ全体を和訳した時に元のフォントを継承されると日本語として読みづらいので修正 */
 
