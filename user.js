@@ -1,4 +1,4 @@
-// Last updated: 2021.10.21
+// Last updated: 2021.10.30
 
 // userChrome.cssとuserContent.cssを反映
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets",true);
@@ -162,6 +162,9 @@ user_pref("browser.newtabpage.activity-stream.feeds.snippets",false);           
 
 // 音量調整で出てくる左上のポップアップ非表示
 user_pref("media.hardwaremediakeys.enabled",false);
+
+// CSSのfont-family:system-uiを無視する
+user_pref("layout.css.system-ui.enabled",false);
 
 // 位置情報の送信を無効
 user_pref("geo.enabled",false);
