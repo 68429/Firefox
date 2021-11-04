@@ -2,7 +2,7 @@
 
 /* 背景色とボタンの色がまぶしいので変更 */
 
-@-moz-document url(about:privatebrowsing) {
+@-moz-document url("about:privatebrowsing") {
 
 html.private {
 --in-content-page-background: #181818 !important;
@@ -23,7 +23,7 @@ background-color: rgba(255, 255, 255, 0.1) !important;
 
 /* 見出しセルの色を変更 */
 
-@-moz-document url(about:support) {
+@-moz-document url("about:support") {
 
 th {
     background-color: #39648f !important;
