@@ -1,15 +1,34 @@
-/* プライベートウインドウを開くと最初に表示されるページの背景色を変更 */
-/* 一瞬紫色が表示されるのは元のaboutPrivateBrowsing.cssを読み込みに行く狐の仕様かも */
+/* プライベートウインドウを開くと最初に表示されるページ */
 
-@-moz-document url("about:privatebrowsing") {
- 
+/* 背景色とボタンの色がまぶしいので変更 */
+
+@-moz-document url(about:privatebrowsing) {
+
 html.private {
---in-content-page-background: #0f0f0f !important;
+--in-content-page-background: #181818 !important;
  }
 
 .info {
 background-color: rgba(255, 255, 255, 0.1) !important;
  }
+
+.promo-cta .button {
+    --in-content-primary-button-background: #4a6f80 !important;
+    --in-content-primary-button-background-hover: #70a8c2 !important;
+}
+
+ }
+
+/* トラブルシューティング情報 */
+
+/* 見出しセルの色を変更 */
+
+@-moz-document url(about:support) {
+
+th {
+    background-color: #39648f !important;
+ }
+
  }
 
 /* 見づらいマイクロソフトのフォントから見やすいNoto Sansに変更 */
