@@ -1,35 +1,37 @@
-/* プライベートウインドウを開くと最初に表示されるページ */
-
-/* 背景色とボタンの色がまぶしいので変更 */
+/* プライベートウインドウを開くと最初に表示されるページの背景色を暗くする */
 
 @-moz-document url("about:privatebrowsing") {
 
-html.private {
---in-content-page-background: #181818 !important;
- }
+  html.private {
+    --in-content-page-background: #181818 !important;
+  }
+  .info {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
 
-.info {
-background-color: rgba(255, 255, 255, 0.1) !important;
- }
-
-.promo-cta .button {
-    --in-content-primary-button-background: #4a6f80 !important;
-    --in-content-primary-button-background-hover: #70a8c2 !important;
 }
 
- }
+/* about:ページのボタン色がダークテーマだと明るすぎる */
 
-/* トラブルシューティング情報 */
+@-moz-document url("about:addons"), url("about:privatebrowsing"), url("about:config"), url("about:protections"), url("about:debugging"), url("about:devtools"), url("about:welcome"), url("about:home"), url("about:newtab") {
 
-/* 見出しセルの色を変更 */
+   :root {
+    --in-content-primary-button-background: rgb(69, 161, 255) !important;
+    --in-content-primary-button-background-hover: rgb(135, 194, 255) !important;
+    --in-content-primary-button-background-active: rgb(186, 220, 255) !important;
+  }
+
+}
+
+/* トラブルシューティング情報 見出しセルの色 */
 
 @-moz-document url("about:support") {
 
-th {
+  th {
     background-color: #39648f !important;
- }
+  }
 
- }
+}
 
 /* 見づらいマイクロソフトのフォントから見やすいNoto Sansに変更 */
 /* 要インストール
@@ -134,7 +136,7 @@ section[aria-label="アカウント作成"]        /* Twitterを使ってみよ�
 div[aria-label="タイムライン: トレンド"]    /* いまどうしてる？ */
 { display:none !important; }
   
-.r-x572qd                                   /* おすすめツイート */
+.r-1bro5k0                                   /* おすすめツイート */
 { display:none !important; }
 
 }
