@@ -1,4 +1,4 @@
-// Last updated: 2021.10.30
+// Last updated: 2022.09.13
 
 // userChrome.cssとuserContent.cssを反映
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets",true);
@@ -88,15 +88,28 @@ user_pref("permissions.default.desktop-notification",2);
 // 0: 許可, 1: 音声ブロック, 5: 音声と動画をブロック
 user_pref("media.autoplay.default",5);
 
+// ユーザーの動作なしでは動画を再生しない
+// 0: 許可, 2: ブロック
+user_pref("media.autoplay.blocking_policy",2);
+
 // VR デバイスへのアクセスの要求をブロック
 // 0: ブロックしない, 2: ブロックする
 user_pref("permissions.default.xr",2);
+
+// 日本語 プロポーショナル、明朝体(Serif)またはゴシック体(Sans-serif)
+user_pref("font.default.ja","sans-serif");
+
+// 英語 プロポーショナル、明朝体(Serif)またはゴシック体(Sans-serif)
+user_pref("font.default.x-western","sans-serif");
 
 // 日本語 プロポーショナルのサイズ
 user_pref("font.size.variable.ja",18);
 
 // 英語 プロポーショナルのサイズ
 user_pref("font.size.variable.x-western",18);
+
+// 日本語 セリフ(明朝体)
+user_pref("font.name.serif.ja","BIZ UDPMincho");
 
 // 日本語 サンセリフ(ゴシック体)
 user_pref("font.name.sans-serif.ja","Noto Sans JP");
