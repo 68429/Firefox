@@ -1,9 +1,9 @@
-// Last updated: 2022.09.13
+// Last updated: 2022.09.14
 
 // userChrome.cssとuserContent.cssを反映
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets",true);
 
-// 消えたUI 密度コンパクト復活
+// 消えたUI 密度コンパクトを復活
 user_pref("browser.compactmode.show",true);
 
 // 起動
@@ -53,7 +53,7 @@ user_pref("browser.urlbar.suggest.topsites",false);
 // 右クリックで画像の情報を表示を復活
 user_pref("browser.menu.showViewImageInfo",true);
 
-// view-sourceで長い行を折り返す
+// view-sourceの長い行を折り返す
 user_pref("view_source.wrap_long_lines",true);
 
 // ポップアップをブロックするとき、このメッセージを表示しない
@@ -88,18 +88,18 @@ user_pref("permissions.default.desktop-notification",2);
 // 0: 許可, 1: 音声ブロック, 5: 音声と動画をブロック
 user_pref("media.autoplay.default",5);
 
-// ユーザーの動作なしでは動画を再生しない
-// 0: 許可, 2: ブロック
+// 再生ボタンを押していない場合の自動再生
+// 0: 許可, 2: ブロックする
 user_pref("media.autoplay.blocking_policy",2);
 
 // VR デバイスへのアクセスの要求をブロック
 // 0: ブロックしない, 2: ブロックする
 user_pref("permissions.default.xr",2);
 
-// 日本語 プロポーショナル、明朝体(Serif)またはゴシック体(Sans-serif)
+// 日本語 プロポーショナル ゴシック体
 user_pref("font.default.ja","sans-serif");
 
-// 英語 プロポーショナル、明朝体(Serif)またはゴシック体(Sans-serif)
+// 英語(ラテン文字) プロポーショナル Sans-serif
 user_pref("font.default.x-western","sans-serif");
 
 // 日本語 プロポーショナルのサイズ
