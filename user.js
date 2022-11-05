@@ -1,10 +1,14 @@
-// Last updated: 2022.09.14
+// Last updated: 2022.11.06
 
-// userChrome.cssとuserContent.cssを反映
+// userChrome.cssとuserContent.cssを有効にする
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets",true);
 
-// 消えたUI 密度コンパクトを復活
+// UI 密度「コンパクト」を復活させる
 user_pref("browser.compactmode.show",true);
+
+// ページ内検索
+// 0: 発音区別符号を区別しない, 1: 発音区別符号を区別する, 2: 分音符号検索時のみ基底文字と区別する
+user_pref("findbar.matchdiacritics",1);
 
 // 起動
 // 0: 空白ページ, 1: ホームページ, 2: 最後に開いたページ, 3: 前回のセッションを復元する
@@ -50,10 +54,10 @@ user_pref("browser.urlbar.suggest.bookmark",false);
 // アドレスバークリックで出るショートカット非表示
 user_pref("browser.urlbar.suggest.topsites",false);
 
-// 右クリックで画像の情報を表示を復活
+// 右クリックで画像の情報を表示を復活させる
 user_pref("browser.menu.showViewImageInfo",true);
 
-// view-sourceの長い行を折り返す
+// view-sourceで長い行を折り返す
 user_pref("view_source.wrap_long_lines",true);
 
 // ポップアップをブロックするとき、このメッセージを表示しない
@@ -88,19 +92,13 @@ user_pref("permissions.default.desktop-notification",2);
 // 0: 許可, 1: 音声ブロック, 5: 音声と動画をブロック
 user_pref("media.autoplay.default",5);
 
-// 再生ボタンを押していない場合の自動再生
+// 自動再生ポリシー誰か和訳して…
 // 0: 許可, 2: ブロックする
-user_pref("media.autoplay.blocking_policy",2);
+// user_pref("media.autoplay.blocking_policy",2);
 
 // VR デバイスへのアクセスの要求をブロック
 // 0: ブロックしない, 2: ブロックする
 user_pref("permissions.default.xr",2);
-
-// 日本語 プロポーショナル ゴシック体
-user_pref("font.default.ja","sans-serif");
-
-// 英語(ラテン文字) プロポーショナル Sans-serif
-user_pref("font.default.x-western","sans-serif");
 
 // 日本語 プロポーショナルのサイズ
 user_pref("font.size.variable.ja",18);
@@ -108,32 +106,23 @@ user_pref("font.size.variable.ja",18);
 // 英語 プロポーショナルのサイズ
 user_pref("font.size.variable.x-western",18);
 
-// 日本語 セリフ(明朝体)
-user_pref("font.name.serif.ja","BIZ UDPMincho");
-
-// 日本語 サンセリフ(ゴシック体)
+// 日本語 ゴシック体
 user_pref("font.name.sans-serif.ja","Noto Sans JP");
 
-// 英語(ラテン文字) サンセリフ
+// 英語 ゴシック体
 user_pref("font.name.sans-serif.x-western","Segoe UI");
-
-// 簡体字中国語 サンセリフ
-user_pref("font.name.sans-serif.zh-CN","Noto Sans SC");
-
-// 韓国語 サンセリフ
-user_pref("font.name.sans-serif.ko","Noto Sans KR");
 
 // 日本語 等幅フォント
 user_pref("font.name.monospace.ja","BIZ UDゴシック");
 
-// 英語(ラテン文字) 等幅フォント
+// 英語 等幅フォント
 user_pref("font.name.monospace.x-western","BIZ UDゴシック");
 
 // 日本語の最小フォントサイズ
 user_pref("font.minimum-size.ja",13);
 
 // 英語の最小フォントサイズ
-user_pref("font.minimum-size.x-western",14);
+user_pref("font.minimum-size.x-western",13);
 
 // 日付、時刻、数値、寸法の書式に、OS の”日本語(日本)”の設定を使う
 user_pref("intl.regional_prefs.use_os_locales",true);
@@ -172,6 +161,10 @@ user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmark
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeDownloads",false);        // 最近のダウンロード
 user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket",false);           // Pocketに保存されたページ
 user_pref("browser.newtabpage.activity-stream.feeds.snippets",false);                             // スニペット
+
+// Firefoxで埋め込みが表示されない原因「強化型トラッキング防止機能」の例外にTwitterとInstagramを追加する
+user_pref("urlclassifier.trackingSkipURLs","*.twitter.com, *.twimg.com");
+user_pref("urlclassifier.features.socialtracking.skipURLs","*.instagram.com, *.twitter.com, *.twimg.com"); 
 
 // 音量調整で出てくる左上のポップアップ非表示
 user_pref("media.hardwaremediakeys.enabled",false);
